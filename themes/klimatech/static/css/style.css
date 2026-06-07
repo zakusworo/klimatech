@@ -340,6 +340,14 @@ footer ul a:hover { color: var(--solar); }
 .post-body a { color: var(--ocean); text-decoration: underline; text-decoration-color: var(--solar); text-underline-offset: 4px; }
 .post-body a:hover { color: var(--coral); }
 .post-body img { border-radius: 8px; margin: 32px 0; }
+.post-body figure { margin: 40px 0; }
+.post-body figure img { width: 100%; height: auto; border-radius: 12px; display: block; }
+.post-body figcaption {
+  font-size: 13px; color: #5a6478;
+  text-align: center; margin-top: 12px;
+  font-style: italic;
+}
+.post-body figcaption a { color: var(--ocean); text-decoration: underline; }
 
 .post-tags { margin-top: 48px; display: flex; gap: 8px; flex-wrap: wrap; }
 .post-tags a { background: var(--glacier); color: var(--ocean); padding: 6px 14px; border-radius: 100px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; transition: background .2s; }

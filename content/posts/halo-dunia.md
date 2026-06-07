@@ -11,6 +11,8 @@ summary: "Postingan pertama di blog baru saya. Cerita sedikit soal kenapa saya m
 
 Ini adalah postingan pertama di blog saya yang dibuat pakai **Hugo** — generator situs statis yang super cepat.
 
+{{< figure src="/images/posts/earth-climate.jpg" caption="Bumi dari luar angkasa — visualisasi sederhana kenapa blog ini lahir. Foto: [NASA](https://unsplash.com/@nasa) di Unsplash." >}}
+
 ## Kenapa mulai nulis?
 
 Saya percaya nulis itu cara terbaik untuk:

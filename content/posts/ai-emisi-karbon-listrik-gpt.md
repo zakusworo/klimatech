@@ -12,6 +12,8 @@ Setiap kali kamu mengirim prompt ke ChatGPT, Claude, atau Gemini, ada **listrik 
 
 Mari kita lihat angkanya.
 
+{{< figure src="/images/posts/servers.jpg" caption="Data center modern — pusat komputasi yang menjalankan inference LLM setiap detik. Foto: [Taylor Vick](https://unsplash.com/@tvick) di Unsplash." >}}
+
 ## Berapa listrik yang dipakai satu prompt?
 
 Jawabannya bervariasi, tergantung model dan panjang respons. Tapi studi dari UC Berkeley (dengan asumsi model skala GPT-3) memberikan estimasi:
@@ -66,6 +68,8 @@ Kalau bisa, batch beberapa request kecil jadi satu request besar, lalu pisah has
 
 ### 5. Pilih provider yang pakai renewable
 Beberapa provider data center (seperti **Google Cloud** dengan carbon-intelligent computing, atau **Cloudflare Workers AI**) sudah mulai pakai listrik 100% renewable dan bahkan match request ke region dengan surplus energi hijau.
+
+{{< figure src="/images/posts/wind-turbine.jpg" caption="Energi angin adalah salah satu sumber listrik rendah karbon yang semakin banyak dipakai data center. Foto: [Karsten Würth](https://unsplash.com/@karsten_wuerth) di Unsplash." >}}
 
 ### 6. Edukasi pengguna
 Bangun UX yang **transparan** soal biaya komputasi. Tampilkan: *"Pertanyaan ini mungkin memakan energi setara menyalakan lampu selama X menit"* — edukasi kecil yang bantu pengguna paham.

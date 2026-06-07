@@ -12,6 +12,8 @@ Kita semua tahu bahwa mobil listrik dan panel surya adalah bagian penting dari t
 
 Dan ini bukan komponen yang netral.
 
+{{< figure src="/images/posts/mining-earth.jpg" caption="Tambang lithium skala besar di Chile, salah satu lokasi lithium triangle. Foto: [Vladimir Patanaev](https://unsplash.com/@vpatanaev) di Unsplash." >}}
+
 ## Angka yang jarang dibicarakan
 
 Untuk membuat satu baterai 60 kWh — ukuran standar untuk mobil listrik seperti Tesla Model 3 — dibutuhkan sekitar **12-20 kg lithium**, **60-100 kg tembaga**, **40-80 kg nikel**, dan **25-50 kg mangan**.
@@ -52,6 +54,8 @@ Ini bukan alasan untuk menolak elektrifikasi — justru sebaliknya. Tapi ada beb
 2. **Recycling baterai** — saat ini lithium-ion hanya ~5% yang di-recycle. Potensi pengurangan emisi sangat besar
 3. **Transparansi supply chain** — konsumen harus tahu dari mana mineral baterai mereka berasal
 4. **Investasi R&D** untuk teknologi baterai yang lebih sedikit mineral (solid-state, sodium-ion, dll)
+
+{{< figure src="/images/posts/recycling.jpg" caption="Recycling baterai lithium-ion masih kurang dari 5% globally — potensi pengurangan emisi sangat besar. Foto: [ian dooley](https://unsplash.com/@sadswim) di Unsplash." >}}
 
 ## Penutup
 
