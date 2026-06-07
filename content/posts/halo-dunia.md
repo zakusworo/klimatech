@@ -9,31 +9,33 @@ summary: "Postingan pertama di blog baru saya. Cerita sedikit soal kenapa saya m
 
 # Halo, Dunia! 👋
 
-Ini adalah postingan pertama di blog saya yang dibuat pakai **Hugo** — generator situs statis yang super cepat.
+Ini adalah postingan pertama di blog saya yang dibuat pakai **Hugo**, generator situs statis yang super cepat.
 
-{{< figure src="/images/posts/earth-climate.jpg" caption="Bumi dari luar angkasa — visualisasi sederhana kenapa blog ini lahir. Foto: [NASA](https://unsplash.com/@nasa) di Unsplash." >}}
+{{< figure src="/images/posts/earth-climate.jpg" caption="Bumi dari luar angkasa, visualisasi sederhana kenapa blog ini lahir. Foto: [NASA](https://unsplash.com/@nasa) di Unsplash." >}}
 
 ## Kenapa mulai nulis?
 
 Saya percaya nulis itu cara terbaik untuk:
-- **Berpikir jernih** — menulis memaksa kita merapikan ide
-- **Mengingat lebih lama** — tulisan adalah catatan yang bisa dibuka kapan saja
-- **Berbagi dengan orang lain** — kalau tulisan kita berguna untuk satu orang saja, itu sudah cukup
+
+- **Berpikir jernih**: menulis memaksa kita merapikan ide.
+- **Mengingat lebih lama**: tulisan adalah catatan yang bisa dibuka kapan saja.
+- **Berbagi dengan orang lain**: kalau tulisan kita berguna untuk satu orang saja, itu sudah cukup.
 
 ## Apa yang akan saya tulis di sini?
 
 Beberapa topik yang kemungkinan besar muncul:
 
-1. **Catatan teknis** — hal-hal yang saya pelajari soal pemrograman, AI, dan teknologi
-2. **Opini** — pikiran random tentang hal yang sedang saya pikirkan
-3. **Tutorial** — langkah-langkah yang saya harap ada waktu saya mulai
+1. **Catatan teknis**, hal-hal yang saya pelajari soal pemrograman, AI, dan teknologi.
+2. **Opini**, pikiran random tentang hal yang sedang saya pikirkan.
+3. **Tutorial**, langkah-langkah yang saya harap ada waktu saya mulai.
 
 ## Soal teknis blog ini
 
 Blog ini dibuat dengan:
-- **Hugo** — generator situs statis
-- **Tema Ananke** — tema Hugo yang bersih dan responsif
-- **Markdown** — format penulisan
-- Akan di-deploy ke **Cloudflare Pages** (gratis)
+
+- **Hugo**, generator situs statis.
+- **Tema Ananke** (sebelumnya; sekarang tema kustom Klimatech), tema Hugo yang bersih dan responsif.
+- **Markdown**, format penulisan.
+- Di-deploy ke **Netlify** (gratis, HTTPS otomatis).
 
 Nantikan tulisan berikutnya! ✍️
