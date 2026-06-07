@@ -5,7 +5,11 @@
       <div class="date">{{ .Date.Format "2 January 2006" }}</div>
       <h1>{{ .Title }}</h1>
       <div class="meta">
-        <div class="avatar">{{ substr .Site.Params.author 0 1 | upper }}</div>
+        {{ if fileExists "static/images/profile/zaku.jpeg" }}
+          <img src="/images/profile/zaku.jpeg" alt="{{ .Site.Params.author }}" class="avatar avatar-img avatar-lg">
+        {{ else }}
+          <div class="avatar avatar-lg">{{ substr .Site.Params.author 0 1 | upper }}</div>
+        {{ end }}
         <span>By {{ .Site.Params.author }} · {{ .ReadingTime }} min read</span>
       </div>
     </div>

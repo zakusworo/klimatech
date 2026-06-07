@@ -190,6 +190,7 @@ h1 em, h2 em, h3 em { font-style: italic; font-weight: 400; }
 .card p { color: #5a6478; font-size: 15px; flex: 1; margin-bottom: 24px; }
 .card .meta { display: flex; align-items: center; gap: 12px; font-size: 13px; color: #5a6478; }
 .card .meta .avatar { width: 32px; height: 32px; border-radius: 50%; background: var(--ocean); color: white; display: grid; place-items: center; font-weight: 700; font-size: 13px; }
+.card .meta .avatar-img { object-fit: cover; background: var(--ocean); }
 
 /* Image variant classes — set per-card based on first tag */
 .card .img.v-climate { background: linear-gradient(135deg, var(--ocean) 0%, var(--forest) 100%); }
@@ -323,6 +324,7 @@ footer ul a:hover { color: var(--solar); }
 .post-header h1 { font-size: clamp(36px, 5vw, 64px); margin-bottom: 32px; line-height: 1.1; }
 .post-header .meta { display: flex; align-items: center; gap: 16px; opacity: 0.9; }
 .post-header .meta .avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--solar); color: var(--ink); display: grid; place-items: center; font-weight: 800; font-size: 16px; }
+.post-header .meta .avatar-img { object-fit: cover; background: var(--solar); }
 .post-body {
   max-width: 800px; margin: 0 auto;
   padding: 80px 48px;
