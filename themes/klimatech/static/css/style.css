@@ -168,6 +168,13 @@ h1 em, h2 em, h3 em { font-style: italic; font-weight: 400; }
   aspect-ratio: 4/3;
   background: linear-gradient(135deg, var(--ocean) 0%, var(--forest) 100%);
   position: relative;
+  background-size: cover;
+  background-position: center;
+}
+.card .img.has-cover::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%);
 }
 .card .img .badge {
   position: absolute; top: 16px; left: 16px;

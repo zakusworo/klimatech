@@ -2,14 +2,20 @@
   Article card partial.
   Image variant class is determined by first tag (climate/forest/energy/tech/ice/sand).
   Falls back to climate gradient.
+  If `coverImage` is set in frontmatter, use that as background image.
 */}}
 {{ $variant := "v-climate" }}
 {{ with index .Params.tags 0 }}
   {{ $variant = printf "v-%s" . }}
 {{ end }}
 
+{{ $cover := .Params.coverImage }}
+{{ $hasCover := and $cover (fileExists (printf "static/%s" $cover)) }}
+
 <article class="card">
-  <a href="{{ .Permalink }}" class="img {{ $variant }}" aria-label="{{ .Title }}">
+  <a href="{{ .Permalink }}" class="img {{ $variant }}{{ if $hasCover }} has-cover{{ end }}"
+     {{ if $hasCover }}style="background-image: url('{{ $cover | relURL }}');"{{ end }}
+     aria-label="{{ .Title }}">
     {{ with index .Params.tags 0 }}
       <span class="badge">{{ . }}</span>
     {{ end }}

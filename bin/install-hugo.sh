@@ -40,5 +40,5 @@ fi
 
 hugo version
 echo "==> Building site..."
-hugo --gc --minify
+hugo --gc --minify --buildFuture
 # Deploy step dijalankan otomatis oleh Netlify, tidak perlu wrangler di sini.
