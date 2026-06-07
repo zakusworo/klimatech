@@ -1,0 +1,10 @@
+<section class="newsletter" id="newsletter">
+  <div class="newsletter-inner">
+    <h2>{{ .Site.Params.newsletterH1 | safeHTML }}<br>{{ .Site.Params.newsletterH2 | safeHTML }}</h2>
+    <p>{{ .Site.Params.newsletterBody }}</p>
+    <form onsubmit="event.preventDefault(); alert('Demo: form belum terkoneksi ke email service.');">
+      <input type="email" placeholder="email@klimatech.fun" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>

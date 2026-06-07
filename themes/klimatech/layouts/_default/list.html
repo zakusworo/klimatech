@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section class="section">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">— {{ .Title }}</div>
+      <h2>{{ .Title }}<br><em>semua pos</em></h2>
+    </div>
+    <a href="/" class="more">← Kembali</a>
+  </div>
+
+  {{ $pages := where .Site.RegularPages "Section" .Section }}
+  {{ if eq .Section "tags" }}
+    {{ $pages = (where .Site.RegularPages ".Params.tags" "intersect" (slice .Title)) }}
+  {{ end }}
+
+  <div class="grid-3">
+    {{ range $pages }}
+      {{- partial "article-card.html" . -}}
+    {{ end }}
+  </div>
+</section>
+{{ end }}

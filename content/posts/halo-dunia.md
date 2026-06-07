@@ -2,7 +2,7 @@
 title: "Halo, Dunia!"
 date: 2026-06-07T10:00:00+08:00
 draft: false
-tags: ["meta", "perkenalan"]
+tags: ["climate", "meta", "perkenalan"]
 categories: ["Umum"]
 summary: "Postingan pertama di blog baru saya. Cerita sedikit soal kenapa saya mulai nulis."
 ---

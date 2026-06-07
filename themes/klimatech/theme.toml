@@ -1,0 +1,11 @@
+name = "Klimatech"
+license = "MIT"
+description = "Climate × Tech themed Hugo theme inspired by GOTOEGYPT landing page."
+homepage = "https://klimatech.fun/"
+tags = ["blog", "landing", "climate", "minimal", "responsive"]
+features = ["responsive", "dark mode ready", "RSS", "SEO"]
+min_version = "0.120.0"
+
+[author]
+  name = "Zaku"
+  homepage = "https://klimatech.fun/"

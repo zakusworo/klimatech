@@ -1,0 +1,38 @@
+{{ define "main" }}
+<article>
+  <header class="post-header">
+    <div class="post-header-inner">
+      <div class="date">{{ .Date.Format "2 January 2006" }}</div>
+      <h1>{{ .Title }}</h1>
+      <div class="meta">
+        <div class="avatar">{{ substr .Site.Params.author 0 1 | upper }}</div>
+        <span>By {{ .Site.Params.author }} · {{ .ReadingTime }} min read</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="post-body">
+    {{ .Content }}
+
+    {{ with .Params.tags }}
+    <div class="post-tags">
+      {{ range . }}
+        <a href="{{ printf "/tags/%s/" . | relURL }}">#{{ . }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+
+  {{ $related := where (where .Site.RegularPages "Section" "posts") ".Permalink" "ne" .Permalink | first 2 }}
+  {{ if gt (len $related) 0 }}
+  <nav class="post-nav">
+    {{ range $related }}
+    <a href="{{ .Permalink }}">
+      <div class="label">Baca juga →</div>
+      <div class="title">{{ .Title }}</div>
+    </a>
+    {{ end }}
+  </nav>
+  {{ end }}
+</article>
+{{ end }}

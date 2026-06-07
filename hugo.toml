@@ -1,23 +1,72 @@
 baseURL = "https://klimatech.fun/"
-languageCode = "id-id"
+defaultContentLanguage = "id"
+locale = "id-ID"
 title = "Klimatech"
 description = "Catatan soal climate, tech, dan hal-hal yang lagi saya pelajari."
-theme = "ananke"
+theme = "klimatech"
 
+# === Site params (dipakai di template) ===
 [params]
   author = "Zaku"
-  site_logo = ""
-  show_reading_time = true
-  show_share_buttons = true
-  profile_mode = false
 
-[[params.ananke_socials]]
-  name = "twitter"
-  url = "https://twitter.com/"
+  # Hero
+  heroEyebrow = "🌍 Climate × Tech Journal"
+  heroH1Line1 = "The planet"
+  heroH1Line2 = "is getting <em>hotter.</em>"
+  heroH1Line3 = "So is tech."
+  heroLede = "Catatan soal climate, teknologi, dan titik-titik di mana keduanya bertemu. Bukan solusi besar — cuma observasi kecil yang semoga berguna."
+  heroCta1Text = "Read articles →"
+  heroCta1Link = "#articles"
+  heroCta2Text = "Tentang Zaku"
+  heroCta2Link = "#about"
+
+  # Climate stats (4 kolom)
+  stat1Num = "+1.45°C"
+  stat1Label = "Avg warming since 1850"
+  stat2Num = "420 ppm"
+  stat2Label = "CO₂ in atmosphere"
+  stat3Num = "87%"
+  stat3Label = "Renewable growth 2024"
+  stat4Num = "∞"
+  stat4Label = "Things to learn"
+
+  # Featured / Tentang
+  aboutHeading1 = "Tentang"
+  aboutHeading2 = "<em>Zaku</em> & blog ini"
+  aboutBody = "Blog ini adalah catatan pribadi saya — bukan jurnal ilmiah, bukan laporan pers — cuma tempat menuangkan apa yang saya pelajari soal climate change dan teknologi. Tulisan muncul saat ada waktu dan mood. Tidak ada jadwal tetap."
+  aboutStat1Num = "1+"
+  aboutStat1Label = "Tahun nulis"
+  aboutStat2Num = "10+"
+  aboutStat2Label = "Topik dibahas"
+  aboutStat3Num = "100%"
+  aboutStat3Label = "Independent"
+
+  # Newsletter
+  newsletterH1 = "Dapat update"
+  newsletterH2 = "<em>tiap pos baru.</em>"
+  newsletterBody = "Sekali kirim, sekali baca. Tanpa spam, tanpa jualan, tanpa email promo dari partner. Cuma link ke artikel baru."
+
+  # Footer
+  footerTagline = "Catatan soal climate, teknologi, dan hal-hal yang lagi saya pelajari. Ditulis dari Jakarta, 2026."
 
 [menu]
   [[menu.main]]
-    identifier = "tentang"
-    name = "Tentang"
-    url = "/tentang/"
+    identifier = "articles"
+    name = "Articles"
+    url = "#articles"
     weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "#about"
+    weight = 20
+  [[menu.main]]
+    identifier = "topics"
+    name = "Topics"
+    url = "/topics/"
+    weight = 30
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "#newsletter"
+    weight = 40

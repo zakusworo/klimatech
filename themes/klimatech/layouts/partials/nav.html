@@ -1,0 +1,9 @@
+<nav class="nav">
+  <a href="/" class="logo">klima<span>·</span>tech</a>
+  <ul class="menu">
+    {{ range .Site.Menus.main }}
+      <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+    {{ end }}
+  </ul>
+  <a href="#newsletter" class="cta">Subscribe</a>
+</nav>

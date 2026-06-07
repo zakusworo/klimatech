@@ -1,0 +1,49 @@
+<section class="newsletter" id="newsletter">
+  <div class="newsletter-inner">
+    <h2>{{ .Site.Params.newsletterH1 | safeHTML }}<br>{{ .Site.Params.newsletterH2 | safeHTML }}</h2>
+    <p>{{ .Site.Params.newsletterBody }}</p>
+    <form onsubmit="event.preventDefault(); alert('Demo: form belum terkoneksi ke email service.');">
+      <input type="email" placeholder="email@klimatech.fun" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo">klima<span>·</span>tech</div>
+      <p>{{ .Site.Params.footerTagline }}</p>
+    </div>
+    <div>
+      <h4>Topics</h4>
+      <ul>
+        <li><a href="/tags/climate/">Climate</a></li>
+        <li><a href="/tags/energy/">Energy</a></li>
+        <li><a href="/tags/tech/">Tech</a></li>
+        <li><a href="/tags/forest/">Forest</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Site</h4>
+      <ul>
+        <li><a href="/posts/">Articles</a></li>
+        <li><a href="/tentang/">About</a></li>
+        <li><a href="/index.xml">RSS feed</a></li>
+        <li><a href="/sitemap.xml">Sitemap</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://github.com/zakusworo" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a></li>
+        <li><a href="mailto:hello@klimatech.fun">Email</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© {{ now.Format "2006" }} {{ .Site.Title }}. All thoughts my own.</span>
+    <span>Built with Hugo · Hosted on Netlify</span>
+  </div>
+</footer>

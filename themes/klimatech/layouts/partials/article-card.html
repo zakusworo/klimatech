@@ -1,0 +1,26 @@
+{{/*
+  Article card partial.
+  Image variant class is determined by first tag (climate/forest/energy/tech/ice/sand).
+  Falls back to climate gradient.
+*/}}
+{{ $variant := "v-climate" }}
+{{ with index .Params.tags 0 }}
+  {{ $variant = printf "v-%s" . }}
+{{ end }}
+
+<article class="card">
+  <a href="{{ .Permalink }}" class="img {{ $variant }}" aria-label="{{ .Title }}">
+    {{ with index .Params.tags 0 }}
+      <span class="badge">{{ . }}</span>
+    {{ end }}
+  </a>
+  <div class="body">
+    <div class="date">{{ .Date.Format "2 January 2006" }}</div>
+    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+    <p>{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify }}{{ end }}</p>
+    <div class="meta">
+      <div class="avatar">{{ substr .Site.Params.author 0 1 | upper }}</div>
+      <span>By {{ .Site.Params.author }} · {{ .ReadingTime }} min read</span>
+    </div>
+  </div>
+</article>

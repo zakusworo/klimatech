@@ -1,0 +1,89 @@
+{{ define "main" }}
+
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <div class="hero-inner">
+    <span class="eyebrow">{{ .Site.Params.heroEyebrow | safeHTML }}</span>
+    <h1>
+      {{ .Site.Params.heroH1Line1 | safeHTML }}<br>
+      {{ .Site.Params.heroH1Line2 | safeHTML }}<br>
+      {{ .Site.Params.heroH1Line3 | safeHTML }}
+    </h1>
+    <p class="lede">{{ .Site.Params.heroLede }}</p>
+    <div class="hero-cta-group">
+      <a href="{{ .Site.Params.heroCta1Link }}" class="btn btn-primary">{{ .Site.Params.heroCta1Text }}</a>
+      <a href="{{ .Site.Params.heroCta2Link }}" class="btn btn-ghost">{{ .Site.Params.heroCta2Text }}</a>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <span class="line"></span>
+  </div>
+</header>
+
+<!-- ===================== STATS ===================== -->
+<section class="stats">
+  <div class="stat">
+    <div class="num">{{ .Site.Params.stat1Num | safeHTML }}</div>
+    <div class="label">{{ .Site.Params.stat1Label }}</div>
+  </div>
+  <div class="stat">
+    <div class="num">{{ .Site.Params.stat2Num | safeHTML }}</div>
+    <div class="label">{{ .Site.Params.stat2Label }}</div>
+  </div>
+  <div class="stat">
+    <div class="num">{{ .Site.Params.stat3Num | safeHTML }}</div>
+    <div class="label">{{ .Site.Params.stat3Label }}</div>
+  </div>
+  <div class="stat">
+    <div class="num">{{ .Site.Params.stat4Num | safeHTML }}</div>
+    <div class="label">{{ .Site.Params.stat4Label }}</div>
+  </div>
+</section>
+
+<!-- ===================== ARTICLES ===================== -->
+<section class="section" id="articles">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow">— Latest posts</div>
+      <h2>Catatan<br><em>terbaru</em> dari {{ .Site.Params.author }}</h2>
+    </div>
+    <a href="/posts/" class="more">View all →</a>
+  </div>
+  <div class="grid-3">
+    {{ range first 6 (where .Site.RegularPages "Section" "posts") }}
+      {{- partial "article-card.html" . -}}
+    {{ end }}
+  </div>
+</section>
+
+<!-- ===================== FEATURED / TENTANG ===================== -->
+<section class="featured" id="about">
+  <div class="featured-inner">
+    <div class="featured-img"></div>
+    <div class="content">
+      <h2>{{ .Site.Params.aboutHeading1 | safeHTML }}<br>{{ .Site.Params.aboutHeading2 | safeHTML }}</h2>
+      <p>{{ .Site.Params.aboutBody }}</p>
+      <div class="featured-stats">
+        <div>
+          <div class="n">{{ .Site.Params.aboutStat1Num }}</div>
+          <div class="l">{{ .Site.Params.aboutStat1Label }}</div>
+        </div>
+        <div>
+          <div class="n">{{ .Site.Params.aboutStat2Num }}</div>
+          <div class="l">{{ .Site.Params.aboutStat2Label }}</div>
+        </div>
+        <div>
+          <div class="n">{{ .Site.Params.aboutStat3Num }}</div>
+          <div class="l">{{ .Site.Params.aboutStat3Label }}</div>
+        </div>
+      </div>
+      <a href="/posts/" class="btn btn-primary">Mulai baca →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== NEWSLETTER ===================== -->
+{{- partial "newsletter.html" . -}}
+
+{{ end }}
