@@ -213,14 +213,16 @@ h1 em, h2 em, h3 em { font-style: italic; font-weight: 400; }
 }
 .featured-img {
   aspect-ratio: 4/5;
-  background: linear-gradient(160deg, var(--coral) 0%, var(--solar) 50%, var(--sand) 100%);
+  background:
+    linear-gradient(180deg, rgba(10, 30, 40, 0.15) 0%, rgba(10, 30, 40, 0.5) 100%),
+    url('/images/posts/tentang-zaku.jpg') center/cover;
   border-radius: 16px;
   position: relative;
   overflow: hidden;
 }
 .featured-img::after {
   content: ''; position: absolute; inset: 0;
-  background: radial-gradient(ellipse at 30% 20%, rgba(255,255,255,0.3), transparent 50%);
+  background: radial-gradient(ellipse at 30% 20%, rgba(255,255,255,0.2), transparent 50%);
 }
 .featured .content h2 {
   font-size: clamp(40px, 5vw, 72px);
