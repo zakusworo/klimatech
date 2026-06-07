@@ -5,7 +5,7 @@ description = "Catatan soal climate, tech, dan hal-hal yang lagi saya pelajari."
 theme = "ananke"
 
 [params]
-  author = "zakusworo"
+  author = "Zaku"
   site_logo = ""
   show_reading_time = true
   show_share_buttons = true
