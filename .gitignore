@@ -1,0 +1,22 @@
+# Build output
+public/
+resources/_gen/
+.hugo_build.lock
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node (kalau nanti pakai npm untuk tema)
+node_modules/
+package-lock.json
+
+# Local env
+.env
+.env.local

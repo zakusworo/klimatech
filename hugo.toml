@@ -1,0 +1,23 @@
+baseURL = "https://klimatech.fun/"
+languageCode = "id-id"
+title = "Klimatech"
+description = "Catatan soal climate, tech, dan hal-hal yang lagi saya pelajari."
+theme = "ananke"
+
+[params]
+  author = "zakusworo"
+  site_logo = ""
+  show_reading_time = true
+  show_share_buttons = true
+  profile_mode = false
+
+[[params.ananke_socials]]
+  name = "twitter"
+  url = "https://twitter.com/"
+
+[menu]
+  [[menu.main]]
+    identifier = "tentang"
+    name = "Tentang"
+    url = "/tentang/"
+    weight = 10
