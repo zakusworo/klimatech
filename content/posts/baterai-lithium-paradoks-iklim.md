@@ -26,6 +26,16 @@ Proses penambangan mineral-mineral ini sangat **boros air dan energi**:
 
 Untuk baterai 60 kWh, itu artinya **9-12 ton CO₂**, cukup untuk mengemudikan mobil listrik yang sama selama **~15.000 km**.
 
+Berikut perbandingan lifecycle emisi:
+
+| Tipe Kendaraan | Emisi Produksi (ton CO₂) | Emisi Operasional (g CO₂/km) | Total Emisi per 200.000 km |
+|---|---|---|---|
+| Mobil bensin (rata-rata) | ~6 | ~170 | ~40 ton CO₂ |
+| Mobil listrik (baterai 60 kWh) | ~10 | ~50 (grid Eropa) | ~20 ton CO₂ |
+| Mobil listrik (baterai 60 kWh) | ~10 | ~120 (grid India) | ~34 ton CO₂ |
+
+*Angka estimasi berdasarkan studi ICCT dan IEA. Tergantung pada sumber listrik di masing-masing negara.*
+
 ## Tapi tunggu, apakah ini buruk?
 
 Tidak juga. Dan ini bagian yang penting: **meskipun produksi baterai menghasilkan emisi, total emisi sepanjang hidup mobil listrik tetap lebih rendah dari mobil bensin.**
