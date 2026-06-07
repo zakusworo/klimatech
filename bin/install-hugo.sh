@@ -1,8 +1,6 @@
 #!/bin/bash
-# build.sh — build Hugo untuk Cloudflare Pages.
-# - Di Cloudflare (Linux): download Hugo extended dari GitHub releases ke ~/.local/bin
-# - Di lokal (Darwin): pakai Hugo yang sudah terinstall (biasanya dari Homebrew)
-# Override build command di Cloudflare dashboard: `bash bin/build.sh`
+# install-hugo.sh — install Hugo extended ke ~/.local/bin, lalu build.
+# Dipanggil oleh Cloudflare Pages (override build command: bash bin/install-hugo.sh)
 
 set -euo pipefail
 
@@ -10,7 +8,6 @@ HUGO_VERSION="${HUGO_VERSION:-0.162.1}"
 INSTALL_DIR="${HOME}/.local/bin"
 OS="$(uname -s)"
 
-# === Linux (Cloudflare build env): download binary ===
 if [ "${OS}" = "Linux" ]; then
   echo "==> Linux detected (Cloudflare) — installing Hugo ${HUGO_VERSION} (extended)..."
 
