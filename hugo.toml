@@ -50,9 +50,9 @@ theme = "klimatech"
   # Isi repoID dan categoryID setelah setup di github.com/apps/giscus
   [params.giscus]
     repo = "zakusworo/klimatech"
-    repoID = ""
+    repoID = "R_kgDOSzawWQ"
     category = "Comments"
-    categoryID = ""
+    categoryID = "DIC_kwDOSzawWc4C-18q"
 
   # Footer
   footerTagline = "Catatan soal climate, teknologi, dan hal-hal yang lagi saya pelajari. Ditulis dari Jakarta, 2026."
