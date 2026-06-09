@@ -1,6 +1,6 @@
 ---
 title: "Mengapa Baterai Lithium Masih Jadi Paradoks Iklim"
-date: 2026-06-07T07:00:00+08:00
+date: 2026-06-08T07:00:00+08:00
 draft: false
 tags: ["energy", "climate", "tech"]
 categories: ["Energi"]
