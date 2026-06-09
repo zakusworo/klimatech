@@ -1,0 +1,45 @@
+{{/*
+  Giscus comment system partial.
+  Renders Giscus script hanya jika semua config terisi di hugo.toml.
+  Docs: https://giscus.app
+*/}}
+{{ $repo      := .Site.Params.giscus.repo }}
+{{ $repoID    := .Site.Params.giscus.repoID }}
+{{ $category  := .Site.Params.giscus.category }}
+{{ $categoryID := .Site.Params.giscus.categoryID }}
+
+{{ if and $repo $repoID $category $categoryID }}
+<section class="comments" id="comments">
+  <h2 class="comments-title">Komentar</h2>
+  <p class="comments-hint">Login dengan akun GitHub untuk berkomentar. Komentar disimpan di GitHub Discussions.</p>
+  <script src="https://giscus.app/client.js"
+          data-repo="{{ $repo }}"
+          data-repo-id="{{ $repoID }}"
+          data-category="{{ $category }}"
+          data-category-id="{{ $categoryID }}"
+          data-mapping="pathname"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="top"
+          data-theme="light"
+          data-lang="id"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async>
+  </script>
+</section>
+{{ else }}
+{{/* Tampilkan instruksi setup jika giscus belum dikonfigurasi */}}
+<section class="comments comments-placeholder">
+  <h2 class="comments-title">Komentar</h2>
+  <p class="comments-hint">
+    <strong>Komentar belum diaktifkan.</strong> Untuk mengaktifkan komentar dengan Giscus:<br>
+    1. Aktifkan GitHub Discussions di repo <a href="https://github.com/{{ $repo | default "zakusworo/klimatech" }}/settings">Settings → Features</a><br>
+    2. Install <a href="https://github.com/apps/giscus">Giscus GitHub App</a> untuk repo ini<br>
+    3. Buat category baru (mis. "Comments") di tab Discussions<br>
+    4. Buka <a href="https://giscus.app">giscus.app</a>, isi form, copy <code>data-repo-id</code> dan <code>data-category-id</code><br>
+    5. Isi 2 ID tersebut di <code>hugo.toml</code> pada section <code>[params.giscus]</code>
+  </p>
+</section>
+{{ end }}

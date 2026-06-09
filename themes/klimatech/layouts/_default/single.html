@@ -27,6 +27,8 @@
     {{ end }}
   </div>
 
+  {{- partial "giscus.html" . -}}
+
   {{ $related := where (where .Site.RegularPages "Section" "posts") ".Permalink" "ne" .Permalink | first 2 }}
   {{ if gt (len $related) 0 }}
   <nav class="post-nav">

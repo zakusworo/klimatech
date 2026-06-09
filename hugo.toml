@@ -46,6 +46,14 @@ theme = "klimatech"
   newsletterH2 = "<em>tiap pos baru.</em>"
   newsletterBody = "Sekali kirim, sekali baca. Tanpa spam, tanpa jualan, tanpa email promo dari partner. Cuma link ke artikel baru."
 
+  # Giscus comments — https://giscus.app
+  # Isi repoID dan categoryID setelah setup di github.com/apps/giscus
+  [params.giscus]
+    repo = "zakusworo/klimatech"
+    repoID = ""
+    category = "Comments"
+    categoryID = ""
+
   # Footer
   footerTagline = "Catatan soal climate, teknologi, dan hal-hal yang lagi saya pelajari. Ditulis dari Jakarta, 2026."
 
