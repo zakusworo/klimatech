@@ -10,8 +10,6 @@ summary: "Anthropic merilis Fable 5, model kelas Mythos pertama yang bisa dipaka
 
 Tanggal 9 Juni 2026, Anthropic merilis **Claude Fable 5**, sekaligus dengan **Claude Mythos 5** untuk kelompok kecil defender siber. Fable 5 adalah model **kelas Mythos pertama yang dibuka untuk publik**, dengan jaring pengaman yang menanganinya secara konservatif di topik-topik berisiko.
 
-{{< figure class="brand-logo" src="/images/posts/anthropic-logo-600.png" caption="Logo Anthropic, perusahaan di balik Claude." >}}
-
 Menurut Anthropic, kapabilitas Fable 5 melampaui semua model yang pernah mereka rilis secara umum. Fable 5 diklaim **state-of-the-art di hampir semua benchmark** yang diuji, dengan keunggulan yang makin besar di tugas yang makin panjang dan makin kompleks. Tapi ini bukan rilis besar-besaran tanpa pagar. Lebih dari 5% sesi rata-rata akan melihat query-nya dialihkan ke Claude Opus 4.8.
 
 {{< figure src="/images/posts/claude-fable-5.jpg" caption="Representasi visual dari kekuatan AI modern. Foto: [Steve Johnson](https://unsplash.com/@steve_j) di Unsplash." >}}
@@ -31,8 +29,6 @@ Fable 5 dilaporkan sebagai model SOTA baru untuk tugas-tugas berbasis **visi**. 
 Fable 5 tetap fokus lintas **jutaan token** dalam tugas jangka panjang dan bisa menyempurnakan outputnya sendiri lewat catatan. Saat diuji bermain **Slay the Spire**, akses ke memory berbasis file meningkatkan performanya tiga kali lipat dibanding Opus 4.8, dan ia mencapai final act tiga kali lebih sering.
 
 ## Perbandingan dengan Model Sebelumnya
-
-{{< figure class="brand-logo" src="/images/posts/anthropic-touch-icon.png" caption="Logo Claude, keluarga model dari Anthropic." >}}
 
 | Model | Tanggal Rilis | Input ($/MToken) | Output ($/MToken) | Status |
 |---|---|---|---|---|
